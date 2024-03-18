@@ -4,7 +4,7 @@
 **🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
 > I modified [🌟SMPLpix](https://github.com/sergeyprokudin/smplpix) code. Please check!
 
-## Code Overview
+### Code Overview
 ```python
 gender = 'female' #@param ["neutral", "female", "male"]
 
@@ -22,7 +22,7 @@ gender = 'female' #@param ["neutral", "female", "male"]
     --part_segm_fn smplx_parts_segm.pkl
 ```
   
-# Dependency (important)
+## Dependency (important)
 ![img2](./downloads/smplx.png)  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
 2. Install [VPoser V2.0](https://smpl-x.is.tue.mpg.de/).
@@ -58,10 +58,10 @@ if not exists(project_name):
   !cd openpose && rm -rf build || true && mkdir build && cd build && cmake .. && make -j`nproc`
 ```
    
-# Quick Start🚶
+## Quick Start🚶
 Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
 
-# GuideLine
+## GuideLine
 1. Implement `OpenPose` and get **keypoints**.
 ```python
 # In colab, there is code.
@@ -110,7 +110,7 @@ VPOSER_MODEL_PATH = '/content/vposer'
 !unzip -n $VPOSER_ZIP_PATH -d $VPOSER_MODEL_PATH
 ```
   
-# How to fix errors?
+## How to fix errors?
 1. Install recent version VPoser and modifed code.
 ```python
 # In fit_single_frame.py (example)
@@ -134,7 +134,7 @@ body_pose = vposer.decode(pose_embedding, output_type='aa').view(1, -1) if use_v
 body_pose = (vposer.decode(pose_embedding).get( 'pose_body')).reshape(1, -1) if use_vposer else None
 ```
   
-# References
+## References
 [simplify-x](https://github.com/vchoutas/smplify-x)  
 [Issues 144](https://github.com/vchoutas/smplify-x/issues/144)  
 [Issues 166](https://github.com/vchoutas/smplify-x/issues/166)  
