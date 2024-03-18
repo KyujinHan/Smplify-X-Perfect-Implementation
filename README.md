@@ -59,7 +59,8 @@ if not exists(project_name):
 ```
    
 ## Quick Start🚶
-Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
+Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
+> You may use V100 or A100 GPU.
 
 ## GuideLine
 1. Implement `OpenPose` and get **keypoints**.
