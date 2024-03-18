@@ -140,7 +140,7 @@ body_pose = (vposer.decode(pose_embedding).get( 'pose_body')).reshape(1, -1) if 
 ```
   
 ## References
-[simplify-x](https://github.com/vchoutas/smplify-x)  
+[smplify-x](https://github.com/vchoutas/smplify-x)  
 [Issues 144](https://github.com/vchoutas/smplify-x/issues/144)  
 [Issues 166](https://github.com/vchoutas/smplify-x/issues/166)  
 [🌟SMPLpix](https://github.com/sergeyprokudin/smplpix)  
