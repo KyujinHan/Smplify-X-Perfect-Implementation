@@ -1,8 +1,8 @@
 # Smplify-X-Perfect-Implementation
 ![img1](./data/images/sample.jpg)  
-**[Smplify-X](https://github.com/vchoutas/smplify-x) implementation. (2024. 03. 18 No Error &amp; Recent version)**
-**🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)]
-
+**[Smplify-X](https://github.com/vchoutas/smplify-x) implementation. (2024. 03. 18 No Error &amp; Recent version)**  
+**🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
+  
 # Dependency (important)
 ![img2](./downloads/smplx.png)  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
@@ -36,7 +36,7 @@ if not exists(project_name):
   !cd openpose && rm -rf build || true && mkdir build && cd build && cmake .. && make -j`nproc`
 ```
 
-# Quick Start
-Colab Code: [![Open In Colab](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)]
-
-#
+#🚶🏻‍♂️Quick Start🚶🏻‍♂️
+Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
+  
+# References
