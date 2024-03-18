@@ -1,8 +1,9 @@
 # Smplify-X-Perfect-Implementation
 ![img1](./downloads/output.png)  
 **[Smplify-X](https://github.com/vchoutas/smplify-x) implementation. (2024. 03. 18 No Error &amp; Recent version)**  
-**🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
-  
+**🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
+> I modified [🌟SMPLpix](https://github.com/sergeyprokudin/smplpix) code. Please check!
+
 # Dependency (important)
 ![img2](./downloads/smplx.png)  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
@@ -38,5 +39,33 @@ if not exists(project_name):
    
 # Quick Start🚶
 Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
+
+# How to fix errors?
+1. Install recent version VPoser and modifed code.
+```python
+# In fit_single_frame.py (example)
+
+## Original
+from human_body_prior.tools.model_loader import load_vposer
+
+## Modified (below)
+from human_body_prior.tools.model_loader import load_model 
+from human_body_prior.models.vposer_model import VPoser
+``` 
+  
+2. Change VPoser implementation code
+```python
+# In fitting.py (example)
+
+## Original
+body_pose = vposer.decode(pose_embedding, output_type='aa').view(1, -1) if use_vposer else None
+
+## Modified
+body_pose = (vposer.decode(pose_embedding).get( 'pose_body')).reshape(1, -1) if use_vposer else None
+```
   
 # References
+[simplify-x](https://github.com/vchoutas/smplify-x)
+[Issues 144](https://github.com/vchoutas/smplify-x/issues/144)
+[Issues 166](https://github.com/vchoutas/smplify-x/issues/166)
+[🌟SMPLpix](https://github.com/sergeyprokudin/smplpix)
