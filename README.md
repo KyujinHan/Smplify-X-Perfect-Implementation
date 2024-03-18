@@ -35,8 +35,8 @@ if not exists(project_name):
   # build openpose
   !cd openpose && rm -rf build || true && mkdir build && cd build && cmake .. && make -j`nproc`
 ```
-
-#🚶🏻‍♂️Quick Start🚶🏻‍♂️
+   
+# Quick Start🚶
 Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
   
 # References
