@@ -141,6 +141,16 @@ body_pose = vposer.decode(pose_embedding, output_type='aa').view(1, -1) if use_v
 body_pose = (vposer.decode(pose_embedding).get( 'pose_body')).reshape(1, -1) if use_vposer else None
 ```
   
+## Option (3D visualization)
+```python
+from vedo import Mesh
+
+mesh = Mesh("./sample/000.obj",)
+#mesh.texture("./sample/sample.jpg")
+
+mesh.show()
+```
+  
 ## References
 [smplify-x](https://github.com/vchoutas/smplify-x)  
 [Issues 144](https://github.com/vchoutas/smplify-x/issues/144)  
