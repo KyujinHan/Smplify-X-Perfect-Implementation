@@ -63,7 +63,9 @@ Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-bad
 > You may use V100 or A100 GPU.
 
 ## GuideLine
-1. Implement `OpenPose` and get **keypoints**.
+1. Input your images in `/content/data/images` folder.
+
+2. Implement `OpenPose` and get **keypoints**.
 ```python
 # In colab, there is code.
 ## Automatic download packages and keypoints save. (Don't worry!!)
@@ -87,7 +89,13 @@ plt.title("Input Frame + Openpose Prediction")
 plt.imshow(np.concatenate([test_img, open_pose_img], 1))
 ```
   
-2. Prepare `VPoser` and `SMPL-X` models in your Google Drive.
+3. Prepare `VPoser` and `SMPL-X` models in your Google Drive.
+```python
+!mkdir /content/gdrive/MyDrive/smplify-x/
+!mkdir /content/gdrive/MyDrive/smplify-x/vposer
+!mkdir /content/gdrive/MyDrive/smplify-x/smplx
+```
+> You upload the `zip` files in each folder.  
 ```python
 # In colab, it is required.
 ## SMPLX_ZIP_PATH and VPOSER_ZIP_PATH
@@ -95,10 +103,6 @@ plt.imshow(np.concatenate([test_img, open_pose_img], 1))
 %cd /content/
 from google.colab import drive
 drive.mount('/content/gdrive')
-
-!mkdir /content/gdrive/MyDrive/smplify-x/
-!mkdir /content/gdrive/MyDrive/smplify-x/vposer
-!mkdir /content/gdrive/MyDrive/smplify-x/smplx
 
 SMPLX_ZIP_PATH = '/content/gdrive/MyDrive/smplify-x/smplx/models_smplx_v1_1.zip' # @param {type:"string"}
 VPOSER_ZIP_PATH = '/content/gdrive/MyDrive/smplify-x/vposer/V02_05.zip' # @param {type:"string"}
