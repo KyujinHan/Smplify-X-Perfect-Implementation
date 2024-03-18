@@ -1,5 +1,5 @@
 # Smplify-X-Perfect-Implementation
-![img1](./data/images/sample.jpg)  
+![img1](./downloads/output.png)  
 **[Smplify-X](https://github.com/vchoutas/smplify-x) implementation. (2024. 03. 18 No Error &amp; Recent version)**  
 **🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)
   
