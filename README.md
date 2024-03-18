@@ -63,7 +63,7 @@ Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-bad
 > You may use V100 or A100 GPU.
 
 ## GuideLine
-0. **If you get a warning about restarting the kernel, ignore it and click Cancel.**
+**0. If you get a warning about restarting the kernel, ignore it and click Cancel.**
   
 1. Input your images in `/content/data/images` folder.
   
