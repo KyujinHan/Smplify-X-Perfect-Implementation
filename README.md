@@ -10,6 +10,9 @@
 2. Install [VPoser V2.0](https://smpl-x.is.tue.mpg.de/).
 3. Install [OpenPose](https://github.com/svikramank/openpose)
 ```python
+# Donwload Openpose
+## There is code in colab. (Don't worry!!)
+
 %cd /content
 import os
 from os.path import exists, join, basename, splitext
