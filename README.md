@@ -4,6 +4,24 @@
 **🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
 > I modified [🌟SMPLpix](https://github.com/sergeyprokudin/smplpix) code. Please check!
 
+## Code Overview
+```python
+gender = 'female' #@param ["neutral", "female", "male"]
+
+!rm -rf /content/data/smplifyx_results
+%cd /content/Smplify-X-Perfect-Implementation
+!git pull origin
+
+!python smplifyx/main.py --config cfg_files/fit_smplx.yaml \
+    --data_folder  /content/data \
+    --output_folder /content/data/smplifyx_results \
+    --visualize=True \
+    --gender=$gender \
+    --model_folder /content/smplx/models_smplx_v1_1/models \
+    --vposer_ckpt /content/vposer/V02_05\
+    --part_segm_fn smplx_parts_segm.pkl
+```
+  
 # Dependency (important)
 ![img2](./downloads/smplx.png)  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
