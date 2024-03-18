@@ -1,10 +1,10 @@
 # Smplify-X-Perfect-Implementation
-![img1]('./data/images/sample.jpg)  
+![img1]('./data/images/sample.JPG')  
 **[Smplify-X](https://github.com/vchoutas/smplify-x) implementation. (2024. 03. 18 No Error &amp; Recent version)**
 **🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)]
 
 # Dependency (important)
-![img2]('./downloads/smplx.png')  
+![img2]('./downloads/smplx.PNG')  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
 2. Install [VPoser V2.0](https://smpl-x.is.tue.mpg.de/).
 3. Install [OpenPose](https://github.com/svikramank/openpose)
