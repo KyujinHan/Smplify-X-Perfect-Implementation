@@ -23,7 +23,7 @@ gender = 'female' #@param ["neutral", "female", "male"]
 ```
   
 ## Dependency (important; update 2024. 08. 30)
-### Download smplx model checkpoint
+### (1) Download smplx model checkpoint
 ![img2](./downloads/smplx.png)  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
 2. Install [VPoser V2.0](https://smpl-x.is.tue.mpg.de/).
@@ -59,7 +59,7 @@ if not exists(project_name):
   !cd openpose && rm -rf build || true && mkdir build && cd build && cmake .. && make -j`nproc`
 ```
   
-### Download openpose model checkpoint (new⭐)
+### (2) Download openpose model checkpoint (new⭐)
 ![img2](./downloads/openpose.png)  
 Before implement code, you need to download `openpose` 3 checkpoints manually.
 - [Hand checkpoint](https://www.kaggle.com/datasets/changethetuneman/openpose-model?select=pose_iter_102000.caffemodel)
