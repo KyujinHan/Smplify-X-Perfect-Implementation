@@ -1,6 +1,6 @@
 # Smplify-X-Perfect-Implementation
 ![img1](./downloads/output.png)  
-**[Smplify-X](https://github.com/vchoutas/smplify-x) implementation. (2024. 07. 21 No Error &amp; Recent version)**  
+**[Smplify-X](https://github.com/vchoutas/smplify-x) implementation. (2024. 08. 30 No Error &amp; Recent version)**  
 **🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
 > I modified [🌟SMPLpix](https://github.com/sergeyprokudin/smplpix) code. Please check!
 
@@ -22,7 +22,8 @@ gender = 'female' #@param ["neutral", "female", "male"]
     --part_segm_fn smplx_parts_segm.pkl
 ```
   
-## Dependency (important)
+## Dependency (important; update 2024. 08. 30)
+### Download smplx model checkpoint
 ![img2](./downloads/smplx.png)  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
 2. Install [VPoser V2.0](https://smpl-x.is.tue.mpg.de/).
@@ -57,7 +58,23 @@ if not exists(project_name):
   # build openpose
   !cd openpose && rm -rf build || true && mkdir build && cd build && cmake .. && make -j`nproc`
 ```
-   
+  
+### Download openpose model checkpoint (new⭐)
+![img2](./downloads/openpose.png)  
+Before implement code, you need to download `openpose` 3 checkpoints manually.
+- [Hand checkpoint](https://www.kaggle.com/datasets/changethetuneman/openpose-model?select=pose_iter_102000.caffemodel)
+- [Pose checkpoint](https://www.kaggle.com/datasets/changethetuneman/openpose-model?select=pose_iter_584000.caffemodel)
+- [Face checkpoint](https://www.kaggle.com/datasets/changethetuneman/openpose-model?select=pose_iter_116000.caffemodel)
+  
+And then, make folders and move checkpoints.
+```python
+# move checkpoint below folders (manually)
+!mkdir /content/gdrive/MyDrive/openpose
+!mkdir /content/gdrive/MyDrive/openpose/hand # 102000.caffemodel
+!mkdir /content/gdrive/MyDrive/openpose/pose # 584000.caffemodel
+!mkdir /content/gdrive/MyDrive/openpose/face # 116000.caffemodel
+```
+  
 ## Quick Start🚶
 Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
 > You may use V100 or A100 GPU.
