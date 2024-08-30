@@ -68,6 +68,7 @@ Before implement code, you need to download `openpose` 3 checkpoints manually.
   
 And then, make folders and move checkpoints.
 ```python
+## In colab, you can find below code
 # move checkpoint below folders (manually)
 !mkdir /content/gdrive/MyDrive/openpose
 !mkdir /content/gdrive/MyDrive/openpose/hand # 102000.caffemodel
