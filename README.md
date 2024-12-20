@@ -78,7 +78,7 @@ And then, make folders and move checkpoints.
   
 ## Quick Start🚶
 Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
-> You may use V100 or A100 GPU.
+> You may use L4 or A100 GPU. (2024.12.20)  
 
 ## GuideLine
 **0. If you get a warning about restarting the kernel, ignore it and click Cancel.**
