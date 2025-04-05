@@ -25,7 +25,7 @@ gender = 'female' #@param ["neutral", "female", "male"]
     --part_segm_fn smplx_parts_segm.pkl
 ```
   
-## Dependency (important; update 2024. 08. 30)
+## 🌟Dependency🌟 (important; update 2024. 08. 30)
 ### (1) Download smplx model checkpoint
 ![img2](./downloads/smplx.png)  
 1. Install [SMPL-X Body Model](https://smpl-x.is.tue.mpg.de/).
