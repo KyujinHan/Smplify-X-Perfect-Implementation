@@ -4,6 +4,9 @@
 **🚶🏻‍♂️Quick start(colab)**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OoGEg8doFA3-3f_5XkA895C9xR9nf-ob?usp=sharing)  
 > I modified [🌟SMPLpix](https://github.com/sergeyprokudin/smplpix) code. Please check!
 
+## Code Release News🔥
+- [2025.04.05]: Following [issue#7](), openpose don't support `CUDA 12.5`. So I added `install cuda 12.2 and change cuda` code in colab.  
+
 ### Code Overview
 ```python
 gender = 'female' #@param ["neutral", "female", "male"]
@@ -21,9 +24,6 @@ gender = 'female' #@param ["neutral", "female", "male"]
     --vposer_ckpt /content/vposer/V02_05\
     --part_segm_fn smplx_parts_segm.pkl
 ```
-
-## Code Release News🔥
-- [2025.04.05]: Following [issue#7](), openpose don't support `CUDA 12.5`. So I added `install cuda 12.2 and change cuda` code in colab.  
   
 ## Dependency (important; update 2024. 08. 30)
 ### (1) Download smplx model checkpoint
