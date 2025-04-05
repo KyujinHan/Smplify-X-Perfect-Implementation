@@ -21,6 +21,9 @@ gender = 'female' #@param ["neutral", "female", "male"]
     --vposer_ckpt /content/vposer/V02_05\
     --part_segm_fn smplx_parts_segm.pkl
 ```
+
+## Code Release News🔥
+- [2025.04.05]: Following [issue#7](), openpose don't support `CUDA 12.5`. So I added `install cuda 12.2 and change cuda` code in colab.  
   
 ## Dependency (important; update 2024. 08. 30)
 ### (1) Download smplx model checkpoint
