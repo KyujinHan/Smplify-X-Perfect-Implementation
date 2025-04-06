@@ -5,7 +5,7 @@
 > I modified [🌟SMPLpix](https://github.com/sergeyprokudin/smplpix) code. Please check!
 
 ## Code Release News🔥
-- **[2025.04.05]**: Following [issue#7](), openpose don't support `CUDA 12.5`. So I added `install cuda 12.2 and change cuda` code in colab. (If you're experiencing severe lag when installing Openpose, press `F5`.)  
+- **[2025.04.05]**: Following [issue#7](https://github.com/KyujinHan/Smplify-X-Perfect-Implementation/issues/7), openpose don't support `CUDA 12.5`. So I added `install cuda 12.2 and change cuda` code in colab. (If you're experiencing severe lag when installing Openpose, press `F5`.)  
 
 ### Code Overview
 ```python
